@@ -1,0 +1,13 @@
+.header { position: fixed; top : 0; left : 0; padding : 10rpx 30rpx 15rpx 30rpx; width : 691rpx; background: -webkit-gradient(linear, 0 0, 0 100%, from(#3f3f3f), to(#2f2f2f)); border-bottom : solid 1px #000; box-shadow: 0 2px 4px #111; }
+.header .bar { height : 60rpx; font-size : 28rpx; background-color : #888; color : #fff; }
+
+.nav { height : 60rpx; width : 100%; background-color: #373737; border : solid 1px #000; border-radius: 5px; overflow: hidden; box-shadow : 0 -1px 0px #777; }
+.nav .nav-wrapper { width : 693rpx; height : 100%; display : flex; position: relative; }
+.nav .tab { color : #111; flex-grow : 1; font-size : 28rpx; border-right : solid 1px #000; width : 50%; background:  -webkit-gradient(linear, 0 0, 0 100%, from(#636363), to(#4f4f4f)); text-align: center; line-height: 60rpx; }
+.nav .tab:first{ border-left : none; }
+.nav .tab.current { color : #fcfcfc; font-weight : bold; background:  -webkit-gradient(linear, 0 0, 0 100%, from(#252525), to(#2f2f2f)); box-shadow: inset 0 0 4px #111; text-shadow : 0 2px 3px #000; }
+
+.list { display: flex; flex-wrap : wrap; padding : 90rpx 0 30rpx 30rpx; background-color: #3f3f3f; }
+.list .item { font-size: 24rpx; text-align: center; width : 210rpx; margin-top : 30rpx; margin-right : 30rpx; }
+.list .item image{ height : 325rpx; width : 100%; box-shadow: 3px 3px 4px #111; }
+.list .item text { width : 100%; height : 32rpx; margin-top : 10rpx; color : #fff; line-height: 32rpx; display: block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }

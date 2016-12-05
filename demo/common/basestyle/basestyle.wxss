@@ -1,0 +1,3 @@
+.basestyle .score { position : relative; height : 30rpx; overflow: hidden; display: none; }
+.basestyle .score .stars { z-index: 2; position: relative; background : url( '/common/basestyle/images/star.png' ) 0 0 repeat-x transparent; background-size: 20% 100%; height : 100%; width : 148rpx; }
+.basestyle .score .color { height : 100%; width : 147rpx; background-color: #f00; z-index : 1; position: absolute; left : 0; top : 0; }

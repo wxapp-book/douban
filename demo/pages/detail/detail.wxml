@@ -1,0 +1,33 @@
+<view style="min-height : {{screen.minHeight}};background-color: #2f2f2f;">
+	<view class="banner">
+		<view class="poster">
+			<image mode="aspectFit" src="{{movie.images.large}}"></image>
+		</view>
+		<view class="info">
+			<view class="title">{{movie.title}}</view>
+			<view>{{movie.aka[movie.aka.length - 1]}}</view>
+			<view class="score">{{movie.rating.average}}<view>分</view></view>
+			<view class="subinfo">
+				<view>{{movie.genresStr}}</view>
+				<view>{{movie.year}}上映</view>
+			</view>
+		</view>
+		<image class="background" mode="aspectFill" src="{{movie.images.large}}"></image>
+	</view>
+
+	<view class="summary">
+		{{movie.summary}}
+	</view>
+
+	<view class="casts">
+		<view class="title">主创</view>
+		<scroll-view scroll-x>
+			<view class="casts-wrapper" style="width:{{movie.staff.length*183}}rpx;">
+				<view class="avatar" wx:for="{{movie.staff}}">
+					<image mode="aspectFill" src="{{item.avatars.large}}"></image>
+					<view>{{item.name}}</view>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+</view>
